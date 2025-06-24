@@ -45,7 +45,6 @@ plt.title('28*28 black image')
 plt.axis('off')
 plt.show()
 
-
 import matplotlib.pyplot as plt
 color_img = np.zeros((100,100,3))
 color_img[0:50,0:50]=[0.15,0.12,0.25]
@@ -56,7 +55,6 @@ plt.imshow(color_img)
 plt.title('100*100 color image')
 plt.axis('off')
 plt.show()
-
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -82,12 +80,26 @@ ax.set_zlabel('Z-axis')
 
 # Show the plot
 plt.show()
+
+a=np.array([1,2,3,4,5,6])
+print(a.shape)
+
+b=a.reshape(2,3)
+print(b)
 '''
 
-a=np.array=([1,2,3,4,5,6])
-#print(a.shape)
-b=a.reshape(2,3)
-#print(b)
+a=np.array([[1,2],[3,4]])
+r=a.ravel()
+f=a.flatten()
+print(r)
+print(f)
 
-images=np.random.rand(100,28,28)
-images=images.reshape(100,28,28,1)
+#ravel flatten을 쓰면 다차원 행렬을 1차원으로 바꿔준다.
+
+
+
+
+
+
+
+

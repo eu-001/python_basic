@@ -45,7 +45,7 @@ plt.title('28*28 black image')
 plt.axis('off')
 plt.show()
 
-'''
+
 import matplotlib.pyplot as plt
 color_img = np.zeros((100,100,3))
 color_img[0:50,0:50]=[0.15,0.12,0.25]
@@ -57,3 +57,37 @@ plt.title('100*100 color image')
 plt.axis('off')
 plt.show()
 
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+
+# Create a figure and a 3D axis
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+# Generate data
+x = np.linspace(-5, 5, 100)
+y = np.linspace(-5, 5, 100)
+X, Y = np.meshgrid(x, y)
+Z = np.sin(np.sqrt(X**2 + Y**2))
+
+# Plot a 3D surface
+ax.plot_surface(X, Y, Z, cmap='viridis')
+
+# Add labels
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
+ax.set_zlabel('Z-axis')
+
+# Show the plot
+plt.show()
+'''
+
+a=np.array=([1,2,3,4,5,6])
+#print(a.shape)
+b=a.reshape(2,3)
+#print(b)
+
+images=np.random.rand(100,28,28)
+images=images.reshape(100,28,28,1)

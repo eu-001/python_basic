@@ -36,6 +36,7 @@ print(a[0])
 print(a[:,1])
 #: = all
 
+'''
 import matplotlib.pyplot as plt
 image = np.zeros((28,28))
 print(image.shape)
@@ -43,3 +44,16 @@ plt.imshow(image,cmap="gray")
 plt.title('28*28 black image')
 plt.axis('off')
 plt.show()
+
+'''
+import matplotlib.pyplot as plt
+color_img = np.zeros((100,100,3))
+color_img[0:50,0:50]=[0.15,0.12,0.25]
+color_img[50:100, 0:50]=[0.5,0, 0.9]
+color_img[50:100,50:100][1,1,1]
+print(color_img)
+plt.imshow(color_img)
+plt.title('100*100 color image')
+plt.axis('off')
+plt.show()
+

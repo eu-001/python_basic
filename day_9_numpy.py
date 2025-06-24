@@ -97,8 +97,9 @@ print(f)
 #ravel flatten을 쓰면 다차원 행렬을 1차원으로 바꿔준다.
 
 
-
-
+heights=np.array[160,172,185,150,177]
+filter1=heights>170
+print(filter1)
 
 
 

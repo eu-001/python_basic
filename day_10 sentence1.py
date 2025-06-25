@@ -132,7 +132,7 @@ find_most_similar(new_sentence, sentences, padded_array
 
 
 
-   ''' 
+"""
 
     # 아래는 아까 수정한 부분들을 # 주석으로 짚어가며 다시 정리한 코드입니다.
 
@@ -203,4 +203,4 @@ find_most_similar(new_sentence, sentences, padded_array
     new_sentence = "나는 밥을 안먹었다"
     find_most_similar(new_sentence, sentences, padded_array, word_to_index, max_len)
 
-    '''
+"""

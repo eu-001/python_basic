@@ -11,3 +11,5 @@ plt.subplot(1, 2, 2)
 plt.title('Inverted Image')
 plt.imshow(inverted, cmap='gray')
 plt.show()
+# Save the inverted image
+

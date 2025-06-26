@@ -1,4 +1,5 @@
 from sentence_transformers import SentenceTransformer,util
+import torch
 
 model = SentenceTransformer('snunlp/KR-SBERT-V40K-klueNLI-augSTS')
 

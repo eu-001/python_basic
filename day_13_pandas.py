@@ -1,10 +1,11 @@
 import pandas
 
+
 '''
 dictionary: 무조건 {} 나오고 안에 {'키'} 나오고 {'키': 값 } 이런형태를 가지고 있다
 값은 무조건 list여야 한다. 각 리스트 갯수도 서로 같아야한다.
 이 자료구조 법칙을 어기면 함수 작동을 안한다
-'''
+
 
 mydataset = {
   'cars': ["BMW", "Volvo", "Ford"],
@@ -38,6 +39,13 @@ dt1 = pd.DataFrame (data1, index = [2022, 2017, 2010])
 
 print(dt1)
 
+'''
 
+import pandas as pd
 df4 = pd.read_csv('data11.csv')
 print(df4)
+
+df= pd.read_csv('test1.csv')
+df=df[['LIMIT_BAL','SEX','EDUCATION','MARRIAGE','AGE']]
+print(df)
+

@@ -37,3 +37,7 @@ data1 = {
 dt1 = pd.DataFrame (data1, index = [2022, 2017, 2010])
 
 print(dt1)
+
+
+df4 = pd.read_csv('data11.csv')
+print(df4)

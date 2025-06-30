@@ -47,5 +47,10 @@ print(df4)
 
 df= pd.read_csv('test1.csv')
 df=df[['LIMIT_BAL','SEX','EDUCATION','MARRIAGE','AGE']]
+df = df[
+  (df['SEX'].isin([1, 2])) &
+  (df['EDUCATION'].isin([1,2,3,4])) &
+  (df['MARRIAGE']).isin([1,2])
+]
 print(df)
 

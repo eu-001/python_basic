@@ -50,7 +50,15 @@ df=df[['LIMIT_BAL','SEX','EDUCATION','MARRIAGE','AGE']]
 df = df[
   (df['SEX'].isin([1, 2])) &
   (df['EDUCATION'].isin([1,2,3,4])) &
-  (df['MARRIAGE']).isin([1,2])
+  (df['MARRIAGE'].isin([1,2]))
 ]
 print(df)
+
+max_limit_bal_id = df['LIMIT_BAL'].idxmax()
+max_limit_bal = df.loc[max_limit_bal_id]
+print(max_limit_bal)
+
+min_limit_bal_id = df['LIMIT_BAL'].idxmin()
+min_limit_bal = df.loc[min_limit_bal_id]
+print(min_limit_bal)
 

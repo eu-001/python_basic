@@ -11,7 +11,7 @@
  plt.show()
 """
 #수학으로 그래프 해석하면 (0,0)(6,250) 걍 기하하는 건디
-
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -25,4 +25,4 @@ plt.title("egea meu hanueon guim", loc="right")
 plt.ylabel("omg",fontdict=font1)
 plt.xlabel("what",fontdict=font2)
 plt.show()
-
+"""

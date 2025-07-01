@@ -17,8 +17,12 @@ import numpy as np
 
 ypoints = np.array([3, 8, 1, 10])
 xpoints = np.array([0.3, 0.7, 2.1, 2.2])
+font1 = {'family':'serif','color':'blue','size':20}
+font2 = {'family':'serif','color':'darkred','size':15}
 plt.plot(ypoints, marker = 'o')
 plt.plot(xpoints, linestyle = 'dotted')
-plt.ylabel("omg")
-plt.xlabel("what")
+plt.title("egea meu hanueon guim", loc="right")
+plt.ylabel("omg",fontdict=font1)
+plt.xlabel("what",fontdict=font2)
 plt.show()
+
